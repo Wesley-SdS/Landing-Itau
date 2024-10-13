@@ -52,8 +52,10 @@ const Header = () => {
                     </button>
                 </div>
 
-                {/* Área de pesquisa e botão de acesso à conta */}
-                <div className="flex items-center gap-4 ml-auto">
+               
+                
+            </div>
+            <div className="flex items-center gap-4 ml-auto">
                     <Search />
                     <button className="flex items-center justify-center gap-4 bg-primary-blue h-20 px-10">
                         <Image
@@ -63,7 +65,6 @@ const Header = () => {
                         <span className="text-white font-bold">Acessar Conta</span>
                     </button>
                 </div>
-            </div>
         </header>
     )
 }
