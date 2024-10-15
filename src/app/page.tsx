@@ -1,7 +1,13 @@
-import Image from "next/image";
+
+import { SectionHero } from "@/components/SectionHero";
+import { SectionServices } from './../components/SectionServices';
 
 export default function Home() {
   return (
-   <div className=""></div>
+    <>
+      <SectionHero />
+      <SectionServices />
+    </>
+ 
   );
 }
