@@ -9,6 +9,7 @@ export function Search() {
                 alt='Search'
                 className="h-6 w-6"  // Ajuste o tamanho da imagem conforme necessário
             />
+      
             <input
                 type='text'
                 className='bg-transparent outline-none text-white pr-5 placeholder:text-white w-full max-w-[300px]'
