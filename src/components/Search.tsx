@@ -7,7 +7,7 @@ export function Search() {
             <Image
                 src={IconSearch}
                 alt='Search'
-                className="h-6 w-6"  // Ajuste o tamanho da imagem conforme necessário
+                className="h-6 w-6"  
             />
       
             <input

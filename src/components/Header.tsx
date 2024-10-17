@@ -19,7 +19,7 @@ const Header = () => {
     return (
         <header className="flex items-center w-full h-20 bg-primary-orange">
             <Container>
-                {/* Logo e itens de menu */}
+         
                 <div className="flex items-center gap-6 md:gap-8">
                     <Image
                         src={Logo}
@@ -28,7 +28,7 @@ const Header = () => {
                     />
                     <ul className={`flex items-center gap-14 md:gap-8 lg:gap-14 ${menuOpen ? 'flex-col absolute top-20 left-0 w-full bg-primary-orange p-4 md:p-0' : 'hidden'} md:flex md:flex-row md:items-center md:gap-14`}>
                         <li>
-                            <ItemMenu name='Para você' />
+                            <ItemMenu name='Para você'  />
                         </li>
                         <li>
                             <ItemMenu name='Para empresas' />
@@ -39,14 +39,14 @@ const Header = () => {
                         <li>
                             <ItemMenu name='Ajuda' />
                         </li>
-                        {/* Search dentro do menu hamburguer */}
+                      
                         <li className="md:hidden w-full">
                             <Search />
                         </li>
                     </ul>
                 </div>
 
-                {/* Menu Hamburguer */}
+         
                 <div className="md:hidden ml-auto flex items-center">
                     <button onClick={toggleMenu}>
                         <Image
@@ -58,7 +58,7 @@ const Header = () => {
                 </div>
             </Container>
 
-            {/* Botão Acessar Conta alinhado à direita */}
+          
             <div className="ml-auto flex items-center gap-4">
                 <button className="flex items-center justify-center gap-4 bg-primary-blue h-20 px-10">
                     <Image
