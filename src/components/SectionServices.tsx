@@ -1,7 +1,7 @@
 import { TfiMoney } from "react-icons/tfi";
 import { ServiceCard } from "@/components/ServiceCardProps";
-import Cliente from '@/assets/cliente.png';
-import Cliente1 from '@/assets/cliente1.png'; // Adapte com as imagens corretas
+
+import Cliente1 from '@/assets/cliente1.png'; 
 import Cliente2 from '@/assets/cliente2.png';
 import Cliente3 from '@/assets/fgts.jpg';
 import Cliente4 from '@/assets/itau.png';
@@ -47,7 +47,7 @@ export function SectionServices() {
                 </div>
             </div>
 
-            <div className="max-w-7xl mx-auto grid grid-cols-2 gap-6"> {/* Alinhando os cards em grid */}
+            <div className="max-w-7xl mx-auto grid grid-cols-2 gap-6"> 
                 <ServiceCard
                     icon={TfiMoney}
                     title="Empréstimo"
@@ -85,7 +85,7 @@ export function SectionServices() {
                     subtitle="Renegociação. Conte com o Itaú"
                     description="Simule do seu jeito e negocie contas em atraso com a melhor condição. É simples, rápido e seguro."
                     buttonText="Confira"
-                    imageSrc={Cliente4}  // Atualize a imagem
+                    imageSrc={Cliente4}  
                     altText="Renegociação"
                 />
 

@@ -3,7 +3,7 @@ import { FaBarcode, FaRegCreditCard } from "react-icons/fa";
 import { IoIosPhonePortrait, IoMdHelpCircle } from "react-icons/io";
 import { IoDocumentText, IoDocumentAttach } from "react-icons/io5";
 
-// Componente reutilizável para os "cards"
+
 const InfoCard = ({ icon: Icon, title, description }: { icon: React.ElementType, title: string, description: string }) => {
     return (
         <div className="flex flex-col w-48 h-42 p-4 gap-2 border rounded-lg hover:border-primary-orange hover:bg-gray-200 group">
