@@ -2,18 +2,18 @@
 import Image from "next/image";
 
 interface ServiceCardProps {
-    icon: React.ElementType;  
+    icon: React.ElementType;
     title: string;
     subtitle: string;
     description: string;
     buttonText: string;
-    imageSrc: StaticImageData | string;
+    imageSrc: string;
 
     altText: string;
 }
 
 export function ServiceCard({
-    icon: Icon, 
+    icon: Icon,
     title,
     subtitle,
     description,
@@ -25,7 +25,7 @@ export function ServiceCard({
         <div className="border rounded-lg max-w-7xl mx-auto mt-4 flex flex-col md:flex-row items-center justify-between">
             <div className="flex-1 p-6">
                 <div className="flex items-center text-orange-500 mb-2">
-                    <Icon className="mr-2 text-2xl" /> 
+                    <Icon className="mr-2 text-2xl" />
                     <p className="font-semibold">{title}</p>
                 </div>
                 <h2 className="text-2xl font-bold mb-2">{subtitle}</h2>
@@ -36,7 +36,7 @@ export function ServiceCard({
                     {buttonText}
                 </button>
             </div>
-            <div className="w-full md:w-1/3 p-4"> 
+            <div className="w-full md:w-1/3 p-4">
                 <Image
                     src={imageSrc}
                     alt={altText}

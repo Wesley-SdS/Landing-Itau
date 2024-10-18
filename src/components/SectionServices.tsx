@@ -1,15 +1,5 @@
 import { TfiMoney } from "react-icons/tfi";
 import { ServiceCard } from "@/components/ServiceCardProps";
-
-import Cliente1 from '@/assets/cliente1.png'; 
-import Cliente2 from '@/assets/cliente2.png';
-import Cliente3 from '@/assets/fgts.jpg';
-import Cliente4 from '@/assets/itau.png';
-import Azul from '@/assets/azul.png';
-import Pao from '@/assets/pao.png';
-import Latam from '@/assets/latam.jpg';
-import Cartoes from '@/assets/cartoes.png';
-import Negociacao from '@/assets/negociacao.png';
 import Image from "next/image";
 
 export function SectionServices() {
@@ -38,7 +28,7 @@ export function SectionServices() {
                 </div>
                 <div className="ml-4">
                     <Image
-                        src={Negociacao}
+                        src="/assets/renegociacao.png"
                         alt="Renegociação"
                         width={300}
                         height={400}
@@ -47,14 +37,14 @@ export function SectionServices() {
                 </div>
             </div>
 
-            <div className="max-w-7xl mx-auto grid grid-cols-2 gap-6"> 
+            <div className="max-w-7xl mx-auto grid grid-cols-2 gap-6">
                 <ServiceCard
                     icon={TfiMoney}
                     title="Empréstimo"
                     subtitle="Consignado INSS"
                     description="Disponível até para quem não tem conta Itaú."
                     buttonText="Confira aqui"
-                    imageSrc={Cliente1}  // Atualize as imagens de acordo
+                    imageSrc="/assets/cliente1.png"
                     altText="Consignado INSS"
 
                 />
@@ -65,7 +55,7 @@ export function SectionServices() {
                     subtitle="O cartão de crédito ideal"
                     description="Selecione o benefício do cartão de crédito ideal pra você."
                     buttonText="Peça o seu"
-                    imageSrc={Cliente2}  // Atualize a imagem
+                    imageSrc="/assets/cliente2.png"
                     altText="Cartão de Crédito"
                 />
 
@@ -75,7 +65,7 @@ export function SectionServices() {
                     subtitle="Não deixe o seu dinheiro parado"
                     description="Antecipe o seu FGTS em até 7 parcelas e o dinheiro cai em até 24 horas."
                     buttonText="Simule agora"
-                    imageSrc={Cliente3}  // Atualize a imagem
+                    imageSrc="/assets/fgts.jpg"
                     altText="Antecipação FGTS"
                 />
 
@@ -85,7 +75,7 @@ export function SectionServices() {
                     subtitle="Renegociação. Conte com o Itaú"
                     description="Simule do seu jeito e negocie contas em atraso com a melhor condição. É simples, rápido e seguro."
                     buttonText="Confira"
-                    imageSrc={Cliente4}  
+                    imageSrc="/assets/renegociacao.png"
                     altText="Renegociação"
                 />
 
@@ -94,7 +84,7 @@ export function SectionServices() {
             <div className="max-w-7xl mx-auto mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div className="border rounded-lg p-6 flex flex-col justify-between items-center gap-2">
                     <Image
-                        src={Azul}
+                        src="/assets/azul.png"
                         width={100}
                         height={100}
                         alt="cartão azul"
@@ -106,7 +96,7 @@ export function SectionServices() {
                 </div>
                 <div className="border rounded-lg p-6 flex flex-col justify-between items-center gap-2">
                     <Image
-                        src={Pao}
+                        src="/assets/pao.png"
                         width={100}
                         height={100}
                         alt="cartão azul"
@@ -118,7 +108,7 @@ export function SectionServices() {
                 </div>
                 <div className="border rounded-lg p-6 flex flex-col justify-between items-center gap-2">
                     <Image
-                        src={Latam}
+                        src="/assets/latam.jpg"
                         width={100}
                         height={100}
                         alt="cartão azul"
@@ -130,7 +120,7 @@ export function SectionServices() {
                 </div>
                 <div className="border rounded-lg p-6 flex flex-col justify-between items-center gap-2">
                     <Image
-                        src={Cartoes}
+                        src="/assets/cartoes.png"
                         width={100}
                         height={100}
                         alt="cartão azul"

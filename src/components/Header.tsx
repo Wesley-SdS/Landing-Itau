@@ -1,12 +1,9 @@
 'use client';
-import Image from 'next/image'
-import React, { useState } from 'react'
-import Logo from '@/assets/logo.svg'
-import { ItemMenu } from './ItemMenu'
-import { Search } from './Search'
+import Image from 'next/image';
+import React, { useState } from 'react';
+import { ItemMenu } from './ItemMenu';
+import { Search } from './Search';
 
-import IconUser from '@/assets/icon-user.svg'
-import HamburgerIcon from '@/assets/hamburger.png'
 import { Container } from './Container';
 
 const Header = () => {
@@ -19,16 +16,16 @@ const Header = () => {
     return (
         <header className="flex items-center w-full h-20 bg-primary-orange">
             <Container>
-         
                 <div className="flex items-center gap-6 md:gap-8">
                     <Image
-                        src={Logo}
+                        src="/assets/logo.svg" 
                         alt='Logo'
-                        className="w-auto h-10"
+                        width={40} 
+                        height={40} 
                     />
                     <ul className={`flex items-center gap-14 md:gap-8 lg:gap-14 ${menuOpen ? 'flex-col absolute top-20 left-0 w-full bg-primary-orange p-4 md:p-0' : 'hidden'} md:flex md:flex-row md:items-center md:gap-14`}>
                         <li>
-                            <ItemMenu name='Para você'  />
+                            <ItemMenu name='Para você' />
                         </li>
                         <li>
                             <ItemMenu name='Para empresas' />
@@ -39,37 +36,38 @@ const Header = () => {
                         <li>
                             <ItemMenu name='Ajuda' />
                         </li>
-                      
+
                         <li className="md:hidden w-full">
                             <Search />
                         </li>
                     </ul>
                 </div>
 
-         
                 <div className="md:hidden ml-auto flex items-center">
                     <button onClick={toggleMenu}>
                         <Image
-                            src={HamburgerIcon}
+                            src="/assets/hamburger.png" 
                             alt="Menu"
-                            className="h-6 w-6"
+                            width={24} 
+                            height={24} 
                         />
                     </button>
                 </div>
             </Container>
 
-          
             <div className="ml-auto flex items-center gap-4">
                 <button className="flex items-center justify-center gap-4 bg-primary-blue h-20 px-10">
                     <Image
-                        src={IconUser} alt='Icon user'
-                        className="h-5 w-5"
+                        src="/assets/icon-user.svg" 
+                        alt='Icon user'
+                        width={20} 
+                        height={20} 
                     />
                     <span className="text-white font-bold">Acessar Conta</span>
                 </button>
             </div>
         </header>
-    )
-}
+    );
+};
 
 export default Header;
